@@ -47,10 +47,10 @@ export default class GameProcess {
         }.bind(this));
 
         document.querySelector(".pause-button").addEventListener("click", this.togglePause.bind(this));
-        document.querySelector(".new-game-button").addEventListener("click", this.startNewGame().bind(this));
+        document.querySelector(".new-game-button").addEventListener("click", this.startNewGame.bind(this));
     }
 
-    startNewGame(){
+    startNewGame() {
         this.clearTimer();
         document.querySelector(".play-info").innerHTML = "<p class='text-left'>Press 'space' to pause</p>";
         this.play = new PlayingField(Config.PLAYING_FIELD_WIDTH, Config.PLAYING_FIELD_HEIGHT);
