@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title back-button" >Tetris</div>
+        <div class="start-menu">
+            <button class="start-button button"> Start game </button>
+            <button class="control-button button"> Control </button>
+            <button class="best-button button"> Best results </button>
+        </div>
+        <div class="control page">
+        </div>
+        <div class="playing page">
+            <div class="submenu">
+                <button class="pause-button button">Pause</button>
+                <button class="new-game-button button">New game</button>
+            </div>
+            <div class="play-panel">
+                <div class="playfield">
+                    <canvas class="main-canvas"></canvas>
+                </div>
+                <div class="game-status">
+                    <p>score: <span class="score"></span></p>
+                    <p>lines: <span class="lines"></span></p>
+                    <p>level: <span class="level"></span></p>
+                    <p>next:</p>
+                    <div >
+                        <canvas class="next-tetromino"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="play-info">Press 'space' to pause</div>
+        </div>
+        <div class="best-results page">
+            <div class="best-results-list">
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>

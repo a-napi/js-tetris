@@ -1,2 +1,4 @@
 # js-tetris
-My realization og simple js teris using Canvas API
+My realization of TETRIS using JS and Canvas API
+
+
